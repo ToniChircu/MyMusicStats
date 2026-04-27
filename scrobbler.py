@@ -5,8 +5,8 @@ import time
 from datetime import datetime, timezone
 
 # DATELE TALE DE LA SPOTIFY
-ID_CLIENT = "100bc478d0c3452b837e2349257a5ea5"
-SECRET_CLIENT = "5e5c68143c824135b46cd71d28954ae0"
+ID_CLIENT = "VĂ RUGĂM INTRODUCEȚI ID-UL VOSTRU AICI"
+SECRET_CLIENT = "VĂ RUGĂM INTRODUCEȚI SECRET-UL VOSTRU AICI"
 URL_REDIRECT = "http://127.0.0.1:8888/callback"
 # Inițializăm Spotipy pentru a ne permite citirea istoricului și piesa pe care o ascultăm curent
 sp = spotipy.Spotify(auth_manager=SpotifyOAuth(

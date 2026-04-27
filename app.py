@@ -4,7 +4,7 @@ import pandas as pd
 import plotly.express as px
 
 # Configurare pagină
-st.set_page_config(page_title="My Music Stats", page_icon="🎧", layout="wide")
+st.set_page_config(page_title="My Music Stats", layout="wide")
 
 st.title("Muzica Mea în Cifre")
 st.markdown("---")

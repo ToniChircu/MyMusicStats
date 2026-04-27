@@ -29,7 +29,7 @@ def setup_db():
 
 def import_initial():
     """Recuperează istoricul de 50 de piese și evită duplicatele la fiecare pornire."""
-    print("🚀 Sincronizare istoric (UTC standard)...")
+    print("Sincronizare istoric (UTC standard)...")
     try:
         recent = sp.current_user_recently_played(limit=50)
         conn = sqlite3.connect('muzica_mea.db')
@@ -105,7 +105,7 @@ def monitorizare_live():
                             (acum_utc, track['artists'][0]['name'], track['name'], 
                              track['album']['name'], durata_ms, track_id_curent))
                 conn.commit()
-                print(f"✨ [Smart Scrobble] Ascultare confirmată și salvată: {track['name']}")
+                print(f"[Smart Scrobble] Ascultare confirmată și salvată: {track['name']}")
                 # Blocăm resalvarea aceleiași piese în această sesiune
                 timp_ascultat_efectiv = 9999999 
             
